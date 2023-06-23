@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.range-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.range-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.range-input label {
+    margin-right: 10px;
+    flex-basis: 60px;
+    flex-shrink: 0;
+}
+
+.range-input .form-range {
+    flex-grow: 1;
+}
+
+.range-input .form-number {
+    width: 60px;
+}
+
+.range-input .skill-value {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-input .range-bar {
+    position: relative;
+    flex-grow: 1;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        min-width: 280px;
+    }
+
+    .range-input {
+        flex-wrap: wrap;
+    }
+
+    .range-input label {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+}
